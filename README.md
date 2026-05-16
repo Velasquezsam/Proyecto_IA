@@ -51,3 +51,10 @@ Tras la optimización, el modelo fue evaluado utilizando un conjunto de datos de
 Accuracy (Precisión Global): 88.89%
 
 Análisis: El modelo cumple con éxito el requerimiento de evaluación de "alcanzar un rendimiento cercano al 90%". Logra clasificar correctamente a casi 9 de cada 10 visitantes.
+
+Clase (Variable: Revenue),Precision,Recall (Exhaustividad),F1-Score
+No Compra (False),0.93,0.93,0.93
+Compra (True),0.64,0.64,0.64
+
+#### Justificación final de las métricas:
+El alto rendimiento en la clase "No Compra" (F1-Score: 0.93) asegura que el departamento de IT no desperdiciará recursos mostrando promociones agresivas a usuarios que definitivamente no van a comprar. Por otro lado, las métricas para la clase "Compra" (0.64), aunque lógicamente menores debido a la dificultad inherente de predecir la intención humana, son lo suficientemente sólidas para identificar un segmento valioso de compradores potenciales en tiempo real, cumpliendo de manera efectiva el objetivo de negocio de la aplicación.
